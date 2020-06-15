@@ -1,0 +1,17 @@
+import { v4 } from "https://deno.land/std/uuid/mod.ts";
+import Todo from "../interfaces/Todo.ts";
+
+let todos: Todo[] = [
+  {
+    id: v4.generate(),
+    todo: "tahajjud",
+    isCompleted: true,
+  },
+  {
+    id: v4.generate(),
+    todo: "eat food",
+    isCompleted: false,
+  },
+];
+
+export default todos;
